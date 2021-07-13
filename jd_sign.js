@@ -76,7 +76,9 @@ function sendNotificationIfNeed() {
 
   // 去除末尾的换行
   let SCKEY = push_key.replace(/[\r\n]/g,"")
-
+  
+  //old     uri:  `https://sc.ftqq.com/${SCKEY}.send`
+  //old     uri:  `https://sct.ftqq.com/${SCKEY}.send`
   const options ={
     uri:  `https://sc.ftqq.com/${SCKEY}.send`,
     form: { text, desp },
