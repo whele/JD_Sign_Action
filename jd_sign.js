@@ -78,7 +78,7 @@ function sendNotificationIfNeed() {
   let SCKEY = push_key.replace(/[\r\n]/g,"")
   
   //old     uri:  `https://sc.ftqq.com/${SCKEY}.send`
-  //old     uri:  `https://sct.ftqq.com/${SCKEY}.send`
+  //new     uri:  `https://sct.ftqq.com/${SCKEY}.send`
   const options ={
     uri:  `https://sc.ftqq.com/${SCKEY}.send`,
     form: { text, desp },
